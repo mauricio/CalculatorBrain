@@ -35,7 +35,7 @@
           middle );
     
     
-    if ( sender.tag >= 0 && sender.tag <= 3  ) {
+    if ( sender.tag >= kSum && sender.tag <= kDivide  ) {
         
         if ( middle ) {            
             self.value = [self.brain perform: self.value ];

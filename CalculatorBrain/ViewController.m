@@ -82,7 +82,7 @@
 }
 
 - (void) setValue:(double) _value {
-    self.numbersField.text =  [NSString stringWithFormat: @"%g", _value ];
+    self.numbersField.text =  [[NSNumber numberWithDouble: _value ] stringValue];
 }
 
 - (void) setStringValue:(NSString *) _value {

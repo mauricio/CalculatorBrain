@@ -19,16 +19,16 @@
 - (double) perform: (double) rightOperand {
     
     switch (self.operation) {
-        case  0 :
+        case  kSum :
             return [self sum: rightOperand];
             break;
-        case  1 :
+        case  kMinus :
             return [self minus: rightOperand];
             break; 
-        case  2 :
+        case  kMultiplication :
             return [self multiply: rightOperand];
             break;        
-        case  3 :
+        case  kDivide :
             return [self divide: rightOperand];
             break;
         default:

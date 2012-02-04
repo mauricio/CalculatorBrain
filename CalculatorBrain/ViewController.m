@@ -50,17 +50,17 @@
     } else {
         
         switch ( sender.tag ) {
-            case 4 :
+            case kSqrt :
                 middle = NO;
                 self.brain.leftOperand = self.value;
                 self.value = self.brain.sqrt;                                
                 break;
-            case 5 :
+            case kClear :
                 middle = NO;
                 [self.brain clear];
                 self.stringValue = @"";
                 break;
-            case 6:
+            case kEqual :
                 
                 NSLog(@" Performing operation = ");
                 

@@ -8,6 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum {
+    kSum = 0,
+    kMinus = 1,
+    kMultiplication = 2,
+    kDivide = 3,
+    kSqrt = 4,
+    kClear = 5,
+    kEqual = 6
+} Operation;
+
 @interface CalculatorBrain : NSObject
 
 @property (nonatomic, assign) double leftOperand;
